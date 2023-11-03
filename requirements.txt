@@ -46,7 +46,6 @@ keras==2.12.0
 kiwisolver==1.4.4
 labelImg==1.8.6
 libclang==16.0.0
-libgl1-mesa-glx
 lxml==4.9.2
 Markdown==3.4.3
 markdown-it-py==2.2.0
