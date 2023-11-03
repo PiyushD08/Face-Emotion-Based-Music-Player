@@ -9,12 +9,12 @@ import webbrowser
 import os
 import streamlit as st
 
-face_classifier = cv2.CascadeClassifier(r'C:\Users\piyus\OneDrive\Desktop\DSSA\Project\app\Emotion_Detection\haarcascade_frontalface_default.xml')
-classifier = load_model(r'C:\Users\piyus\OneDrive\Desktop\DSSA\Project\app\Emotion_Detection\model.h5')
+face_classifier = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
+classifier = load_model(r'model.h5')
 
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
 
-playlist_folder = r'C:\Users\piyus\OneDrive\Desktop\DSSA\Project\app\Emotion_Detection\Playlist'
+playlist_folder = 'Playlist'
 
 def detect_emotion(frame):
     labels = []
